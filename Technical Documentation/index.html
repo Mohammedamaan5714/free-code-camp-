@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Sidebar -->
+    <nav id="navbar">
+        <header>Documentation Topics</header>
+        <a href="#Introduction" class="nav-link">Introduction</a>
+        <a href="#HTML_Basics" class="nav-link">HTML Basics</a>
+        <a href="#CSS_Styling" class="nav-link">CSS Styling</a>
+        <a href="#JavaScript_Fundamentals" class="nav-link">JavaScript Fundamentals</a>
+        <a href="#Version_Control_with_Git" class="nav-link">Version Control with Git</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-doc">
+        <!-- Introduction Section -->
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <p>
+                Technical documentation is a vital part of any software project. It provides developers, both new and experienced, with the necessary information to understand, utilize, and contribute to a project effectively.
+            </p>
+            <p>
+                Good documentation covers a range of topics, from basic setup and usage to more advanced configurations and customizations.
+            </p>
+            <p>
+                This guide will introduce you to fundamental concepts and tools that are widely used in web development, including HTML, CSS, JavaScript, and Git.
+            </p>
+        </section>
+
+        <!-- HTML Basics Section -->
+        <section class="main-section" id="HTML_Basics">
+            <header>HTML Basics</header>
+            <p>
+                HTML (Hypertext Markup Language) is the standard markup language for creating web pages and web applications. It forms the backbone of any website, structuring the content and making it accessible to users.
+            </p>
+            <p>
+                An HTML document is structured using elements, which are represented by tags. The following is a basic example of an HTML document:
+            </p>
+            <code>
+                &lt;!DOCTYPE html&gt;<br>
+                &lt;html lang="en"&gt;<br>
+                &nbsp;&nbsp;&lt;head&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="UTF-8"&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Example&lt;/title&gt;<br>
+                &nbsp;&nbsp;&lt;/head&gt;<br>
+                &nbsp;&nbsp;&lt;body&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Hello, World!&lt;/h1&gt;<br>
+                &nbsp;&nbsp;&lt;/body&gt;<br>
+                &lt;/html&gt;
+            </code>
+            <p>
+                Here are some key elements in HTML:
+            </p>
+            <ul>
+                <li>&lt;h1&gt; to &lt;h6&gt;: Heading tags for different levels of headings.</li>
+                <li>&lt;p&gt;: Paragraph tag for text content.</li>
+                <li>&lt;a&gt;: Anchor tag for hyperlinks.</li>
+                <li>&lt;img&gt;: Image tag for embedding pictures.</li>
+                <li>&lt;div&gt;: Division tag for grouping elements.</li>
+            </ul>
+            <p>Here's how you can create a link in HTML:</p>
+            <code>
+                &lt;a href="https://www.example.com"&gt;Visit Example&lt;/a&gt;
+            </code>
+        </section>
+
+        <!-- CSS Styling Section -->
+        <section class="main-section" id="CSS_Styling">
+            <header>CSS Styling</header>
+            <p>
+                CSS (Cascading Style Sheets) is used to control the style and layout of web pages. CSS can be applied to HTML elements in various ways, including inline, internal, and external stylesheets.
+            </p>
+            <p>
+                Here's an example of CSS applied via an external stylesheet:
+            </p>
+            <code>
+                body &#123;<br>
+                &nbsp;&nbsp;background-color: #f4f4f9;<br>
+                &nbsp;&nbsp;color: #333;<br>
+                &nbsp;&nbsp;font-family: Arial, sans-serif;<br>
+                &#125;<br>
+                h1 &#123;<br>
+                &nbsp;&nbsp;color: #2c3e50;<br>
+                &#125;
+            </code>
+            <p>
+                Some key CSS concepts include:
+            </p>
+            <ul>
+                <li>Selectors: Patterns used to select the elements you want to style.</li>
+                <li>Properties: The aspects of elements that you want to change (e.g., color, margin).</li>
+                <li>Responsive Design: Techniques to make your web pages look good on all devices.</li>
+                <li>Flexbox and Grid: Layout models for creating complex designs.</li>
+            </ul>
+            <p>Here's an example of using Flexbox in CSS:</p>
+            <code>
+                .container &#123;<br>
+                &nbsp;&nbsp;display: flex;<br>
+                &nbsp;&nbsp;justify-content: center;<br>
+                &#125;
+            </code>
+        </section>
+
+        <!-- JavaScript Fundamentals Section -->
+        <section class="main-section" id="JavaScript_Fundamentals">
+            <header>JavaScript Fundamentals</header>
+            <p>
+                JavaScript is a programming language that adds interactivity and dynamic behavior to web pages. It is an essential tool for front-end web development, allowing you to create responsive and engaging user experiences.
+            </p>
+            <p>
+                JavaScript can manipulate the Document Object Model (DOM), handle events, validate forms, and more. Here's a basic example of JavaScript:
+            </p>
+            <code>
+                document.addEventListener('DOMContentLoaded', function() &#123;<br>
+                &nbsp;&nbsp;console.log('Hello, JavaScript!');<br>
+                &#125;);
+            </code>
+            <p>
+                Key JavaScript concepts include:
+            </p>
+            <ul>
+                <li>Variables: Containers for storing data values.</li>
+                <li>Functions: Blocks of code designed to perform a particular task.</li>
+                <li>Events: Actions that occur in the browser, such as clicks and key presses.</li>
+                <li>DOM Manipulation: Changing the structure and content of HTML documents.</li>
+                <li>APIs: Interfaces for interacting with other software components or services.</li>
+            </ul>
+            <p>Here's an example of a JavaScript function:</p>
+            <code>
+                function greet(name) &#123;<br>
+                &nbsp;&nbsp;return 'Hello, ' + name;<br>
+                &#125;
+            </code>
+        </section>
+
+        <!-- Version Control with Git Section -->
+        <section class="main-section" id="Version_Control_with_Git">
+            <header>Version Control with Git</header>
+            <p>
+                Git is a distributed version control system that allows developers to track changes in their codebase over time. It is widely used in software development for managing source code history and collaboration.
+            </p>
+            <p>
+                Git commands are executed in the terminal, providing control over repositories and changes. Here's an example of some basic Git commands:
+            </p>
+            <code>
+                git init<br>
+                git add .<br>
+                git commit -m "Initial commit"<br>
+                git push origin main
+            </code>
+            <p>
+                Key Git concepts include:
+            </p>
+            <ul>
+                <li>Repositories: Storage locations for code and history.</li>
+                <li>Branches: Parallel versions of a repository.</li>
+                <li>Commits: Snapshots of changes made to the codebase.</li>
+                <li>Merging: Combining changes from different branches.</li>
+                <li>Pull Requests: Proposing changes to a repository's main branch.</li>
+            </ul>
+            <p>Here's how to create a new branch in Git:</p>
+            <code>
+                git checkout -b new-feature
+            </code>
+        </section>
+    </main>
+</body>
+</html>
