@@ -1,0 +1,73 @@
+/* Basic styling and reset */
+body, h1, p, figure, img, figcaption, section, a {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+body {
+  background-color: #f4f4f9;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+main {
+  max-width: 800px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+#title {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+#img-div {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+#img-caption {
+  font-size: 1em;
+  margin-top: 10px;
+  color: #7f8c8d;
+}
+
+#tribute-info {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+#tribute-link {
+  display: block;
+  text-align: center;
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+#tribute-link:hover {
+  background-color: #2980b9;
+}
